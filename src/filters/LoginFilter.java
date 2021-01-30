@@ -79,11 +79,3 @@ public class LoginFilter implements Filter {
     }
 
 }
-このコードについて少し解説すると、まず、
-
-        if(!servlet_path.matches("/css.*")) {
-            HttpSession session = ((HttpServletRequest)request).getSession();
-            Employee e = (Employee)session.getAttribute("login_employee");
-
-            // ...（中略）...
-        }
